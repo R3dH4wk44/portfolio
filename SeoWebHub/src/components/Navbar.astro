@@ -1,12 +1,14 @@
 ---
+
 ---
-<header class=" gap-2 container-fluid grid grid-cols-3 min-h-20  items-center justify-between text-center bg-gradient-to-r from-slate-800 to-black">
+
+<header class="px-2 gap-2 container-fluid grid grid-cols-3 min-h-20  items-center justify-between text-center bg-gradient-to-r from-slate-800 to-black">
     <div>
-        <span class=" text-2xl"><b class=" text-blue-700">S</b>eo<b class=" text-blue-700">W</b>eb<b class=" text-blue-700">H</b>ub</span>
+        <span class=" text-4xl"><b class=" text-blue-700">S</b>eo<b class=" text-blue-700">W</b>eb<b class=" text-blue-700">H</b>ub</span>
     </div>
     <div>
         <nav>
-            <ul class=" md:flex gap-5 hidden">
+            <ul class=" lg:flex gap-5 hidden items-center justify-center text-2xl">
                 <li><a href="/SeoWebHub/src/pages/diseno_web.html">Diseño Web</a></li>
                 <li><a href="/SeoWebHub/src/pages/seo.html">Consultoría SEO</a></li>
                 <li><a href="/SeoWebHub/src/pages/contacto.html">Contacto</a></li>
@@ -16,12 +18,30 @@
     </div>
     <div>
         <div class="dropdown ">
-            <button class="dropdown-button p-5 md:hidden"><i class="fa-solid fa-bars"></i></button>
-            <div class="dropdown hidden">
-                <ul class=" list-none">
-                    
+            <button class="dropdown-button p-5 cursor-pointer lg:hidden" id="burguerButton"><i class="fa-solid fa-bars"></i></button>
+            <div class="dropdown-text  rounded absolute hidden" id="burguerMenu">
+                <ul class=" list-none bg-slate-900 rounded  flex flex-col w-full transition-all delay-100">
+                    <a href="/SeoWebHub/src/pages/diseno_web.html"><li class="py-2 px-8 border-b border-black hover:bg-slate-600">Diseño Web</li></a>
+                    <a href="/SeoWebHub/src/pages/seo.html"><li class="py-2 px-8 border-b border-black hover:bg-slate-600">Consultoría SEO</li></a>
+                    <a href="/SeoWebHub/src/pages/contacto.html"></a><li class="py-2 px-8 border-b border-black hover:bg-slate-600">Contacto</li></a>
+                    <a href="/SeoWebHub/src/pages/nosotros.html"></a><li class="py-2 px-8 border-b border-black hover:bg-slate-600">Nosotros</li></a>
                 </ul>
             </div>
         </div>
     </div>
 </header>
+<script>
+    let burguerButton = document.getElementById('burguerButton');
+    let burguerMenu = document.getElementById('burguerMenu');
+
+    burguerButton.addEventListener('click', function(){
+        burguerMenu.classList.toggle('hidden');
+    })
+</script>
+
+<style>
+   .dropdown-text{
+    width:100% !important;
+    right: 0;
+   }
+</style>
