@@ -8,14 +8,14 @@
     const {titulo, href, contenido} = Astro.props;
 ---
 
-    <div class="container-fluid  min-h-96 bg-slate-900 flex flex-col items-center  justify-center">
-        <h1 class=" text-8xl p-10 text-center">{titulo}</h1>
+    <div class="container-fluid  min-h-96 bg-slate-900 flex flex-col items-center  justify-around">
+        <h1 class=" text-5xl px-10 pt-10 text-center">{titulo}</h1>
         <div class="p-10  container max-w-7xl grid grid-cols-1 lg:grid-cols-3 mt-10 mx-20 gap-6">
             <div class="self-center">
-                <h2 class="text-3xl font-bold">Consultor SEO Freelancer:</h2>
-                <p class="mt-5 text-xl">Diseñamos estrategias SEO a medida adaptadas a tu negocio y tus principales verticales de empresariales. </p>
+                <h2 class="text-3xl font-bold text-center lg:text-left">Consultor SEO Freelancer:</h2>
+                <p class="mt-5 text-xl text-center lg:text-left">Diseñamos estrategias SEO a medida adaptadas a tu negocio y tus principales verticales de empresariales. </p>
             </div>
-            <img class=" ease-in hover:-translate-y-2 duration-200 shadow-md shadow-white rounded-3xl justify-self-center self-center place-self-center text-center" src=`${href}` alt="">
+            <img class=" hover:-translate-y-2 duration-200 shadow-md shadow-white rounded-3xl justify-self-center self-center place-self-center text-center" src=`${href}` height="450" width="300" alt="">
             <div>
                 
             </div>
