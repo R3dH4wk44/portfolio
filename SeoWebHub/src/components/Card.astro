@@ -17,7 +17,7 @@ const { href, title, body, link } = Astro.props;
 			{title}
 			<span>&rarr;</span>
 		</h2>
-		<p>
+		<p class=" text-blue-500">
 			{body}
 		</p>
 	</a>
@@ -54,7 +54,7 @@ const { href, title, body, link } = Astro.props;
 	p {
 		margin-top: 0.5rem;
 		margin-bottom: 0;
-		color:#3b5ffd;
+		
 	}
 	.link-card:is(:hover, :focus-within) {
 		background-position: 0;
