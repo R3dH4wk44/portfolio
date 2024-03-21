@@ -8,7 +8,7 @@
     const {titulo, href} = Astro.props;
 ---
 
-    <div class="container-fluid  min-h-96 bg-slate-900 flex flex-col items-center  justify-around">
+    <div class="container-fluid  min-h-96 bg-slate-950 flex flex-col items-center  justify-around">
         <h1 class=" text-5xl px-10 pt-10 text-center" >{titulo}</h1>
         <div class="p-10  container max-w-7xl grid grid-cols-1 lg:grid-cols-3 mt-10 mx-20 gap-6">
             <div class="self-center">
@@ -16,8 +16,9 @@
                 <p class="mt-5 text-xl text-center lg:text-left">Diseñamos estrategias SEO a medida adaptadas a tu negocio y tus principales verticales de empresariales. </p>
             </div>
             <img class=" hover:-translate-y-2 duration-200 shadow-md shadow-white rounded-3xl justify-self-center self-center place-self-center text-center" src=`${href}` height="450" width="300" alt="">
-            <div>
-                       
+            <div class="flex lg:flex-col justify-around lg:justify-center text-center items-center">
+                <button class="hover:-translate-y-2 duration-200 px-5 py-3 rounded-full bg-blue-600 hover:bg-blue-500 uppercase">Reservar consulta</button>
+                <button class="hover:-translate-y-2 duration-200 lg:mt-5 px-10 py-3 rounded-full bg-white hover:bg-slate-200 text-blue-600 uppercase">Ver Linkedin</button>
             </div>
         </div>
     </div>
