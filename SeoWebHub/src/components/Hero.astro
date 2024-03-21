@@ -2,10 +2,10 @@
     interface Props{
         titulo: string;
         href: string;
-        contenido:string;
+        
     }
 
-    const {titulo, href, contenido} = Astro.props;
+    const {titulo, href} = Astro.props;
 ---
 
     <div class="container-fluid  min-h-96 bg-slate-900 flex flex-col items-center  justify-around">
@@ -17,7 +17,7 @@
             </div>
             <img class=" hover:-translate-y-2 duration-200 shadow-md shadow-white rounded-3xl justify-self-center self-center place-self-center text-center" src=`${href}` height="450" width="300" alt="">
             <div>
-                
+                       
             </div>
         </div>
     </div>
