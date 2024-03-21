@@ -1,13 +1,82 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="SeoWebHub">
+	<Hero titulo="Consultor SEO Freelancer Albert Sort" href="/img/Sort.webp" />
 
-	<Hero titulo="Consultor SEO Freelancer Albert Sort" href="/img/Sort.webp" contenido=""/>
-	
+	<div class="container px-12 my-16 grid grid-cols-5 items-center gap-3">
+		<h3 class="text-3xl font-bold text-center col-span-2">
+			Nuestros Servivios SEO
+		</h3>
+		<p class="text-md font-semibold text-start col-span-2">
+			Especialista SEO focalizado en la generación de Negocio por cada
+			vertical de negocio que tengas.
+		</p>
+		<div class="">
+		<a href="" class="text-lg font-semibold  flex justify-end"
+			> <img src="/public/img/icons/eye-svgrepo-com.svg" class="mr-2" alt=""><span>Solicitar más información</span></a
+		>
+	</div>
+	</div>
+
+	<div
+		class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-16 px-12 gap-3"
+	>
+		<Card
+			title="SEO On Page"
+			body="Posicionamiento dentro de la página web."
+			href=""
+			link="/public/img/icons/keyboard-4-svgrepo-com.svg"
+		/>
+		<Card
+			title="SEO Off Page"
+			body="Posicionamiento fuera de la página web."
+			href=""
+			link="/public/img/icons/keyboard-4-svgrepo-com.svg"
+		/>
+		<Card
+			title="Auditoría SEO"
+			body="Análisis de inicio a fin de todo tu negocio a nivel SEO."
+			href=""
+			link="/public/img/icons/keyboard-4-svgrepo-com.svg"
+		/>
+		<Card
+			title="LinkBuilding"
+			body="Captación de enlaces entrantes a tu página web."
+			href=""
+			link="/public/img/icons/keyboard-4-svgrepo-com.svg"
+		/>
+		<Card
+			title="SEO Ecommerce"
+			body="SEO Especializado para tiendas online."
+			href=""
+			link="/public/img/icons/keyboard-4-svgrepo-com.svg"
+		/>
+		<Card
+			title="SEO Lead Gen"
+			body="SEO Especializado para generación de Leads."
+			href=""
+			link="/public/img/icons/keyboard-4-svgrepo-com.svg"
+		/>
+		<Card
+			title="SEO Local"
+			body="SEO Especializado para una o varias zonas locales."
+			href=""
+			link="/public/img/icons/keyboard-4-svgrepo-com.svg"
+		/>
+		<Card
+			title="ASO y SEO Mobile"
+			body="SEO para Apps y SEO adaptado dispositivos."
+			href=""
+			link="/public/img/icons/keyboard-4-svgrepo-com.svg"
+		/>
+	</div>
+	<div class=" bg-slate-950">
+		hola
+	</div>
 </Layout>
 
-<style>
-</style>
+<style></style>
