@@ -2,24 +2,36 @@
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import Card from "../components/Card.astro";
+import Cliente from "../components/Cliente.astro";
 ---
 
 <Layout title="SeoWebHub">
 	<Hero titulo="Consultor SEO Freelancer Albert Sort" href="/img/Sort.webp" />
 
-	<div class="container px-12 my-16 grid grid-cols-5 items-center gap-3">
-		<h3 class="text-3xl font-bold text-center col-span-2">
+	<div
+		class="container px-12 my-16 grid lg:grid-cols-5 grid-cols-1 items-center gap-3"
+	>
+		<h3 class="text-3xl font-bold text-center lg:col-span-2">
 			Nuestros Servivios SEO
 		</h3>
-		<p class="text-md font-semibold text-start col-span-2">
+		<p
+			class="text-md font-semibold text-center lg:text-start lg:col-span-2"
+		>
 			Especialista SEO focalizado en la generación de Negocio por cada
 			vertical de negocio que tengas.
 		</p>
 		<div class="">
-		<a href="" class="text-lg font-semibold  flex justify-end"
-			> <img src="/public/img/icons/eye-svgrepo-com.svg" class="mr-2" alt=""><span>Solicitar más información</span></a
-		>
-	</div>
+			<a
+				href=""
+				class="text-lg font-semibold flex justify-center lg:justify-end"
+			>
+				<img
+					src="/img/icons/eye-svgrepo-com.svg"
+					class="mr-2"
+					alt=""
+				/><span>Solicitar más información</span></a
+			>
+		</div>
 	</div>
 
 	<div
@@ -74,9 +86,40 @@ import Card from "../components/Card.astro";
 			link="/img/icons/keyboard-4-svgrepo-com.svg"
 		/>
 	</div>
-	<div class=" bg-slate-950">
-		hola
+	
+	<div
+		class="container-fluid py-10 px-12 mt-16 grid lg:grid-cols-4 grid-cols-1 items-center gap-3 bg-slate-950"
+	>
+		<h3 class="text-3xl font-bold text-center">
+			Clientes SEO
+		</h3>
+		<p
+			class="text-md font-semibold text-center lg:text-start lg:col-span-2"
+		>
+		Tras más de 10 años haciendo SEO para todo tipo de negocio, aquí puedes ver algunos de ellos.
+		</p>
+		<div class="">
+			<a
+				href=""
+				class="text-lg font-semibold flex justify-center lg:justify-end"
+			>
+				<img
+					src="/img/icons/eye-svgrepo-com.svg"
+					class="mr-2"
+					alt=""
+				/><span>Solicitar más información</span></a
+			>
+		</div>
 	</div>
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-slate-950 py-10 px-12 gap-3">
+		<Cliente titulo="Airbnb" contenido="Posicionamiento Local en el mercado Español" src="/img/posicionamiento-seo-airbnb.webp"/>
+		<Cliente titulo="Factorial HR" contenido="Posicionamiento SEO On Page y Off Page" src="/img/posicionamiento-seo-factorial-.webp"/>
+		<Cliente titulo="SkyScanner" contenido="Posicionamiento Local en el mercado Español" src="/img/posicionamiento-seo-skyscanner.webp"/>
+		<Cliente titulo="T.Catedral Barcelona" contenido="Posicionamiento SEO On Page y Off Page" src="/img/posicionamiento-seo-botiga-catedral-barcelona.webp"/>
+
+	</div>
+
+
 </Layout>
 
 <style></style>
